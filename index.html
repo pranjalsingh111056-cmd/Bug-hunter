@@ -1,1 +1,81 @@
-index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BountyPilot | Bug Bounty Research</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1020;color:#e8edfa;font-family:Arial,sans-serif}
+header{padding:22px 6%;background:#111a30;border-bottom:1px solid #27334e}
+h1{margin:0;color:#65e6bd;font-size:27px}
+header p{color:#9eabc5;margin:7px 0 0}
+main{max-width:1100px;margin:auto;padding:25px 18px}
+h2{font-size:19px;margin:26px 0 13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:#141e35;border:1px solid #283753;border-radius:13px;padding:18px}
+.number{font-size:27px;font-weight:bold;color:#65e6bd}
+.muted{color:#9eabc5;font-size:13px;line-height:1.6}
+.tag{display:inline-block;background:#263752;color:#a9d8ff;padding:5px 9px;border-radius:20px;font-size:12px}
+button{background:#65e6bd;color:#08151b;border:0;padding:11px 16px;border-radius:8px;font-weight:bold;cursor:pointer}
+a{color:#65e6bd;text-decoration:none}
+li{margin:12px 0;color:#cbd5e8}
+footer{padding:25px;text-align:center;color:#8492ad;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ BountyPilot</h1>
+<p>Bug Bounty Intelligence & Research Dashboard</p>
+</header>
+<main>
+<div class="card">
+<span class="tag">INITIAL SETUP</span>
+<h2>Your research command centre</h2>
+<p class="muted">A central dashboard for tracking public vulnerability intelligence, bounty programs and research leads.</p>
+</div>
+
+<h2>Overview</h2>
+<div class="grid">
+<div class="card"><div class="number" id="programs">10</div><p class="muted">Programs on watchlist</p></div>
+<div class="card"><div class="number">0</div><p class="muted">Verified findings</p></div>
+<div class="card"><div class="number">0</div><p class="muted">Pending reviews</p></div>
+<div class="card"><div class="number">Not active</div><p class="muted">Automated monitoring</p></div>
+</div>
+
+<h2>Program Watchlist</h2>
+<div class="card">
+<ul>
+<li>Microsoft</li><li>Google</li><li>Apple</li><li>OpenAI</li>
+<li>Shopify</li><li>Binance</li><li>Okta</li><li>Mozilla</li>
+<li>Sophos</li><li>T-Mobile</li>
+</ul>
+</div>
+
+<h2>Public Intelligence Sources</h2>
+<div class="grid">
+<div class="card"><h3>NVD</h3><p class="muted">National Vulnerability Database</p><a href="https://nvd.nist.gov/" target="_blank">Open NVD ↗</a></div>
+<div class="card"><h3>CISA KEV</h3><p class="muted">Known Exploited Vulnerabilities</p><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">Open CISA ↗</a></div>
+<div class="card"><h3>GitHub Advisories</h3><p class="muted">Public security advisories</p><a href="https://github.com/advisories" target="_blank">Open Advisories ↗</a></div>
+</div>
+
+<h2>Research Workflow</h2>
+<div class="card">
+<ol>
+<li>Collect public vulnerability intelligence.</li>
+<li>Check exact program scope and policy.</li>
+<li>Verify affected versions and potential impact.</li>
+<li>Review reproducible evidence and duplicates.</li>
+<li>Manually approve any report before submission.</li>
+</ol>
+</div>
+
+<h2>Safety Rules</h2>
+<div class="card">
+<p class="muted">Only authorized, in-scope research. No destructive testing, data theft, credential attacks, persistence, denial of service or unauthorized access. Public CVEs are leads, not proof of a bounty-eligible finding.</p>
+</div>
+</main>
+<footer>BountyPilot • Research responsibly • No guaranteed bounty earnings</footer>
+</body>
+</html>
