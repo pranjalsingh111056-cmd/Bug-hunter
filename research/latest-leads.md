@@ -1,7 +1,7 @@
 # BountyPilot Research Leads
 
 Source: CISA Known Exploited Vulnerabilities catalog
-Updated: 2026-11-23T09:44:56.649256+00:00
+Updated: 2026-11-23T13:39:03.693561+00:00
 
 **Important:** These are intelligence leads, not confirmed bounty findings. Check program scope, versions and policy before any authorized research.
 
